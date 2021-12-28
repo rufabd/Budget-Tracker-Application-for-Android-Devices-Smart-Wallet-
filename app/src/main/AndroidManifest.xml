@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app_dev_money_tracking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Money tracking"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_dev_money_tracking" >
+        <activity
+            android:name=".Logout"
+            android:exported="true" />
+        <activity
+            android:name=".FacebookActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReceiptGallery"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".PlannedPayments"
+            android:label="Planned payments"
+            android:exported="true" />
+        <activity
+            android:name=".NewPlannedPayment"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name=".splash"
+            android:exported="false" />
+        <activity
+            android:name=".All_records"
+            android:exported="false" />
+        <activity
+            android:name=".PremiumContent"
+            android:exported="true"
+            android:label="Try premium" />
+        <activity
+            android:name=".Convert_currency_activity"
+            android:exported="false"
+            android:label="Currency converter" />
+        <activity
+            android:name=".CategoriesActivity"
+            android:exported="true"
+            android:label="Categories" />
+        <activity
+            android:name=".NewRecord"
+            android:exported="true"
+            android:label="Add new record"
+            android:parentActivityName=".Home_activity" />
+        <activity
+            android:name=".Home_activity"
+            android:exported="true"
+            android:label="Home" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider708598993437903"
+            android:exported="true" />
+    </application>
+
+</manifest>

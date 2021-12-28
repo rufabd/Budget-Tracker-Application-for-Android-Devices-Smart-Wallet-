@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            tools:context=".NewRecord">
+
+            <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                android:id="@+id/headerConst"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:background="#005666"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                tools:ignore="ExtraText">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/imageClose"-->
+            <!--                    android:layout_width="25dp"-->
+            <!--                    android:layout_height="25dp"-->
+            <!--                    android:layout_marginEnd="355dp"-->
+            <!--                    android:visibility="visible"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="@id/headerConst"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintLeft_toLeftOf="@id/headerConst"-->
+            <!--                    app:layout_constraintTop_toTopOf="@id/headerConst"-->
+            <!--                    app:srcCompat="@drawable/closeicon" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/imageDone"-->
+            <!--                    android:layout_width="25dp"-->
+            <!--                    android:layout_height="25dp"-->
+            <!--                    android:layout_marginStart="355dp"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="@id/headerConst"-->
+            <!--                    app:layout_constraintRight_toRightOf="@id/headerConst"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="@id/headerConst"-->
+            <!--                    app:layout_constraintVertical_bias="0.52"-->
+            <!--                    app:srcCompat="@drawable/doneicon" />-->
+
+            <!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:id="@+id/textHeader"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_width="200dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_height="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text="Add New Record"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textAlignment="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textColor="#FFFFFF"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textSize="20sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    app:layout_constraintBottom_toBottomOf="@id/headerConst"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    app:layout_constraintLeft_toLeftOf="@id/headerConst"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    app:layout_constraintRight_toRightOf="@id/headerConst"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    app:layout_constraintTop_toTopOf="@id/headerConst" />&ndash;&gt;-->
+
+            <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+            <Button
+                android:id="@+id/btnRecordTypeIncome"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:text="Income"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/AmountConstraint"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btnRecordTypeExpense"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.222" />
+
+
+            <Button
+                android:id="@+id/btnRecordTypeExpense"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:text="Expense"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/AmountConstraint"
+                app:layout_constraintLeft_toRightOf="@id/btnRecordTypeIncome"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.187" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/AmountConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/round_background"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/editAmount"
+                    android:layout_width="240dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#421281"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="80sp"
+                    app:layout_constraintHorizontal_bias="0.59"
+                    app:layout_constraintLeft_toLeftOf="@id/AmountConstraint"
+                    app:layout_constraintRight_toRightOf="@id/AmountConstraint"
+                    app:layout_constraintTop_toTopOf="@id/AmountConstraint" />
+
+                <TextView
+                    android:id="@+id/recordCurrency"
+                    android:layout_width="64dp"
+                    android:layout_height="26dp"
+                    android:text="EUR"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/AmountConstraint"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toRightOf="@id/editAmount"
+                    app:layout_constraintRight_toRightOf="@id/AmountConstraint"
+                    app:layout_constraintTop_toTopOf="@id/AmountConstraint"
+                    app:layout_constraintVertical_bias="0.146" />
+
+                <TextView
+                    android:id="@+id/operationSignRecord"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    app:layout_constraintBottom_toBottomOf="@id/AmountConstraint"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintLeft_toLeftOf="@id/AmountConstraint"
+                    app:layout_constraintRight_toLeftOf="@id/editAmount"
+                    app:layout_constraintTop_toTopOf="@id/AmountConstraint"
+                    app:layout_constraintVertical_bias="0.287" />
+
+
+                <TextView
+                    android:id="@+id/chosenCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Select Category Below"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/categoryChooseHeading"
+                    app:layout_constraintHorizontal_bias="0.541"
+                    app:layout_constraintStart_toStartOf="@+id/categoryChooseHeading" />
+
+                <TextView
+                    android:id="@+id/categoryChooseHeading"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="132dp"
+                    android:layout_marginBottom="-15dp"
+                    android:text="Category"
+                    android:textAlignment="center"
+                    android:textColor="#80FFFFFF"
+
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/chosenCategory"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editAmount"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CategoriesRecycle"
+                android:layout_width="407dp"
+                android:layout_height="304dp"
+                android:layout_marginTop="-55dp"
+                android:background="@drawable/round_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/AmountConstraint"
+                app:layout_constraintVertical_bias="0.193" />
+
+            <TextView
+                android:id="@+id/new_record_error"
+                android:layout_width="349dp"
+                android:layout_height="15dp"
+                android:textColor="@color/accentRed"
+                app:layout_constraintBottom_toTopOf="@+id/add_record"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/open_category_input"
+                app:layout_constraintTop_toBottomOf="@+id/CategoriesRecycle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/open_category_input"
+                android:layout_width="174dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp"
+                android:background="#0097A7"
+                android:text="Add new Category"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/add_record"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CategoriesRecycle"
+                app:layout_constraintVertical_bias="0.027" />
+
+            <Button
+                android:id="@+id/add_record"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_background"
+                android:text="Add record"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CategoriesRecycle"
+                app:layout_constraintVertical_bias="0.357" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

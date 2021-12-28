@@ -1,0 +1,9 @@
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    android:backgroundTint="#FFFFFF"
+    android:color="#FFFFFF"
+    android:singleLine="true"
+    android:textColor="#9C27B0"
+    android:textColorHint="#2DFFFFFF" />
+

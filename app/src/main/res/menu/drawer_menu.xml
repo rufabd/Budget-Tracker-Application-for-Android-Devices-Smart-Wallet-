@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_new_record"
+            android:icon="@drawable/ic_records"
+            android:title="Add new record" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_category"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_converter"
+            android:icon="@drawable/investment"
+            android:title="Currency converter" />
+        <item
+            android:id="@+id/nav_receipts"
+            android:icon="@drawable/utilities"
+            android:title="Receipts" />
+        <item
+            android:id="@+id/nav_tryPremium"
+            android:icon="@drawable/salary"
+            android:title="Try premium" />
+        <item
+            android:id="@+id/nav_myPlannedPayments"
+            android:icon="@drawable/debt"
+            android:title="My planned payments" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+</menu>

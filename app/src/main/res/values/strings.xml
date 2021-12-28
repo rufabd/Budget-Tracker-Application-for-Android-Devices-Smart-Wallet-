@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">App_dev_money_tracking</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="currency">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNH</item>
+        <item>HKD</item>
+        <item>NZD</item>
+    </string-array>
+    <string-array name="currency_names">
+        <item>EUR (Euro)</item>
+        <item>USD (United States Dollar)</item>
+        <item>JPY (Japanese Yen)</item>
+        <item>GBP (British Pound Sterling)</item>
+        <item>AUD (Australian Dollar)</item>
+        <item>CAD (Canadian Dollar)</item>
+        <item>CHF (Swiss Franc)</item>
+        <item>CNH (Chinese Yuan)</item>
+        <item>HKD (Hong Kong Dollar)</item>
+        <item>NZD (New Zealand Dollar)</item>
+    </string-array>
+
+    <string name="facebook_app_id">708598993437903</string>
+    <string name="facebook_client_token">8f46619440b3af3a73d63be8bafd45ca</string>
+    <string name="fb_login_protocol_scheme">fb708598993437903</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
