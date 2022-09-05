@@ -15,8 +15,11 @@ User can also set the pre-planned payments that in the specified time the paymen
 
 Signup and Login screen
 
-<p align="center">
+<!-- <p align="center">
   <img alt="Signup" src="./![image](https://user-images.githubusercontent.com/72948977/188371334-b706b3d8-a036-465d-b4d6-f5d5026672a7.png)" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Login" src="./![image](https://user-images.githubusercontent.com/72948977/188371393-5674cae9-b934-4011-98e3-d5860f2bedaa.png)" width="45%">
-</p>
+</p> -->
+
+![image](https://user-images.githubusercontent.com/72948977/188371334-b706b3d8-a036-465d-b4d6-f5d5026672a7.png)
+![image](https://user-images.githubusercontent.com/72948977/188371393-5674cae9-b934-4011-98e3-d5860f2bedaa.png)
