@@ -33,6 +33,6 @@ All categories page
 
 Setting the main currency for the calculations (can be changed later)
 
-![image](https://user-images.githubusercontent.com/72948977/188372365-fd2b1729-a7f6-4653-8350-5b1f5fdb49a6.png
+![image](https://user-images.githubusercontent.com/72948977/188372365-fd2b1729-a7f6-4653-8350-5b1f5fdb49a6.png)
 
 
