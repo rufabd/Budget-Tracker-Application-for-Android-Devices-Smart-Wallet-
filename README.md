@@ -21,7 +21,8 @@ Signup and Login screen
   <img alt="Login" src="./![image](https://user-images.githubusercontent.com/72948977/188371393-5674cae9-b934-4011-98e3-d5860f2bedaa.png)" width="45%">
 </p> -->
 
+Signup and Login page
 ![image](https://user-images.githubusercontent.com/72948977/188371334-b706b3d8-a036-465d-b4d6-f5d5026672a7.png)
-<div margin-left: 30px;> ![image](https://user-images.githubusercontent.com/72948977/188371393-5674cae9-b934-4011-98e3-d5860f2bedaa.png) </div>
+![image](https://user-images.githubusercontent.com/72948977/188371393-5674cae9-b934-4011-98e3-d5860f2bedaa.png)
 
 
