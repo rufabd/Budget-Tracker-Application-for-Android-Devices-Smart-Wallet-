@@ -15,15 +15,23 @@ User can also set the pre-planned payments that in the specified time the paymen
 
 Signup and Login screen
 
-<!-- <p align="center">
-  <img alt="Signup" src="./![image](https://user-images.githubusercontent.com/72948977/188371334-b706b3d8-a036-465d-b4d6-f5d5026672a7.png)" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Login" src="./![image](https://user-images.githubusercontent.com/72948977/188371393-5674cae9-b934-4011-98e3-d5860f2bedaa.png)" width="45%">
-</p> -->
-
-Signup and Login page
-
 ![image](https://user-images.githubusercontent.com/72948977/188371334-b706b3d8-a036-465d-b4d6-f5d5026672a7.png)
 ![image](https://user-images.githubusercontent.com/72948977/188371393-5674cae9-b934-4011-98e3-d5860f2bedaa.png)
+
+Main page
+
+![image](https://user-images.githubusercontent.com/72948977/188372157-4d27b118-3adc-4040-b002-ea8d2bbd1095.png)
+
+Adding new record
+![image](https://user-images.githubusercontent.com/72948977/188372204-76f08f24-2803-4d34-9449-ff1a18205007.png)
+
+All categories page
+![image](https://user-images.githubusercontent.com/72948977/188372237-7d6f1ba7-9b94-46ae-aa75-b6a59085cf1c.png)
+
+Setting the main currency for the calculations (can be changed later)
+![image](https://user-images.githubusercontent.com/72948977/188372365-fd2b1729-a7f6-4653-8350-5b1f5fdb49a6.png)
+
+Navigation menu
+![image](https://user-images.githubusercontent.com/72948977/188372424-59e7ee93-9aa9-4db5-a748-74d13ac2b213.png)
 
 
